@@ -29,19 +29,17 @@ class 성적표 {
         System.out.println("이름 : ");
         String name = scanner.next();
         System.out.println("국어 : ");
-        int a = scanner.nextInt();
+        int ko = scanner.nextInt();
         System.out.println("영어 : ");
-        int b = scanner.nextInt();
+        int en = scanner.nextInt();
         System.out.println("수학 : ");
-        int c = scanner.nextInt();
-        System.out.println(solution.solution(name, a, b, c));
-        scanner.close();
+        int ma = scanner.nextInt();
+        System.out.println(solution.solution(name, ko, en, ma)); 
     }
-
-    String solution(String name, int a, int b, int c){
-        String title = "성적표";
-        int total = a + b + c;
-        float avg = total/3;
+    String solution(String name, float ko, float en, float ma){
+        String title = "## 성적표 ##";
+        float total = ko + en + ma;
+        float avg = total /3;
         String grade = "";
         if(avg >= 90){grade = "A";}
         else if(avg >= 80){grade = "B";}
@@ -50,11 +48,12 @@ class 성적표 {
         else if(avg >= 50){grade = "E";}
         else {grade = "F";}
         return String.format(
-        "%s \n ********************************"
-        + "\n 이름 국어 영어 수학 총점 평균 학점"
-        + "\n ********************************"
-        + "\n %s %d %d %d %d %.1f %s"
-        + "\n ********************************", title, name, a, b, c, total, avg, grade);
+            " ********************************"
+            +"\n 이름 국어 영어 수학 총점 평균 학점"
+            +"\n *******************************"
+            +"\n홍길동 90 90 92 272 90.6 A"
+            +"\n********************************"
+        );
+
     }
-    
 }
