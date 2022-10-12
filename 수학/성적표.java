@@ -36,9 +36,9 @@ class 성적표 {
         int ma = scanner.nextInt();
         System.out.println(solution.solution(name, ko, en, ma)); 
     }
-    String solution(String name, float ko, float en, float ma){
+    String solution(String name, int ko, int en, int ma){
         String title = "## 성적표 ##";
-        float total = ko + en + ma;
+        int total = ko + en + ma;
         float avg = total /3;
         String grade = "";
         if(avg >= 90){grade = "A";}
@@ -48,11 +48,12 @@ class 성적표 {
         else if(avg >= 50){grade = "E";}
         else {grade = "F";}
         return String.format(
-            " ********************************"
+            "%s ********************************"
             +"\n 이름 국어 영어 수학 총점 평균 학점"
             +"\n *******************************"
-            +"\n홍길동 90 90 92 272 90.6 A"
+            +"\n%s %d %d %d %d %.1f %s"
             +"\n********************************"
+            , title, name, ko, en, ma, total, avg, grade
         );
 
     }
