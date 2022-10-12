@@ -18,5 +18,9 @@ package greedy;
       ********************************************************
  */
 class 거스름돈 {
+    public static void main(String[] args) {
+        거스름돈 solution = new 거스름돈();
+    }
+
     
 }
