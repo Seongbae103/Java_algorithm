@@ -1,4 +1,4 @@
-package 수학;
+package 부르트포스;
 import java.util.*;
 /**
  마지막 날짜 문제

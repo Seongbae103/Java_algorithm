@@ -19,7 +19,7 @@ BMI 지수에 따른 결과는 다음과 같다.
 홍길동 170 79 정상
 ***************************
 */
-package 수학;
+package 부르트포스;
 import java.util.*;
 class 비만 {
     public static void main(String[] args) {

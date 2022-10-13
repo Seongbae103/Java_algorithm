@@ -1,4 +1,4 @@
-package 수학;
+package 부르트포스;
 
 class 테스트 {
     public static void main(String[] args) {
