@@ -5,7 +5,7 @@ class 삽입정렬 {
         new 삽입정렬().solution();
     }
     void solution(){
-        int randomNuber = (int)(Math.random()*10)+1;
-        System.out.println("랜덤넘버: "+randomNuber);
+        int rand = (int)(Math.random()*10)+1;
+        System.out.println("랜덤숫자"+rand);
     }
 }

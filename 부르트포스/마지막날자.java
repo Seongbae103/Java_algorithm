@@ -40,7 +40,7 @@ class 마지막날짜 {
             case 1 : case 3 : case 5 : case 7 : case 8 : case 10 : case 12: lastday = 31; break;
             case 4 : case 6 : case 9 : case 11 : lastday = 30; break;
             case 2 : lastday = checkLeapYear(y); break;
-            default :System.out.println("해당 월은 존재하지 않습니다."); break;
+            default : System.out.println("해당 월은 존재하지 않습니다."); break;
         }
         return String.format(
         "*************"
